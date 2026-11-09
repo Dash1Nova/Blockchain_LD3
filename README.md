@@ -17,30 +17,6 @@ Darbo metu atliekama:
 
 Naudojamas tinklas – `regtest`. RPC prievadas – `19011`. Python aplinkoje naudojama `python-bitcoinlib` versija `0.12.2`.
 
-## Projekto struktūra
-
-```text
-bitcoin-regtest-mif/
-│
-├── .gitignore
-├── README.md
-│
-├── rpc_example.py
-├── rpc_transaction.py
-├── rpc_block.py
-│
-├── check_prevout.py
-├── check_wallet_tx.py
-├── list_wallets.py
-│
-├── legacy_example.py
-├── block_header.py
-│
-├── image.png
-├── image-1.png
-└── image-2.png
-```
-
 ## Naudojamos programos
 
 | Programa             | Paskirtis                                                   |
