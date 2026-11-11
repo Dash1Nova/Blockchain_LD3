@@ -38,7 +38,7 @@ Naudojamas tinklas – `regtest`. RPC prievadas – `19011`. Python aplinkoje na
 
 Programa per RPC iškviečia `getblockchaininfo` ir `getnetworkinfo` metodus. Ji pateikia aktyvaus tinklo pavadinimą, blokų ir antraščių skaičių, pradinio sinchronizavimo būseną, Bitcoin Core versiją, aktyvių ryšių skaičių ir stebėjimo laiką.
 
-![Bitcoin tinklo informacija](image.png)
+<img width="1002" height="187" alt="Ekrano kopija 2026-11-09 151919" src="https://github.com/user-attachments/assets/19b7c190-043d-49bd-b10f-fa71545dc516" />
 
 Gauti rezultatai:
 
@@ -76,8 +76,6 @@ Bloko hash:
 
 Transakcija turi 2 patvirtinimus.
 
-![Bitcoin transakcijos analizė](image-1.png)
-
 ### Įvestis (vin)
 
 | Laukas          | Reikšmė                                                            |
@@ -87,7 +85,7 @@ Transakcija turi 2 patvirtinimus.
 
 Įvestis nurodo ankstesnę transakciją ir jos išvesties indeksą, iš kurios panaudotos lėšos.
 
-### Išvestys (vout)
+### Išvestis (vout)
 
 | Indeksas |  Suma (BTC) | Skripto tipas        | Adresas                                        |
 | -------- | ----------: | -------------------- | ---------------------------------------------- |
@@ -110,7 +108,7 @@ Programa analizuoja `vin` ir `vout` atskirai. `vin` nurodo ankstesnių transakci
 
 Programa naudoja `getblock(blockhash, 2)` metodą, kuris grąžina išsamų bloko ir jo transakcijų JSON aprašą. Taip nereikia kiekvienai bloko transakcijai atskirai iškviesti `getrawtransaction`.
 
-![Bitcoin bloko analizė](image-2.png)
+<img width="978" height="141" alt="Ekrano kopija 2026-11-09 152111" src="https://github.com/user-attachments/assets/44a6554d-30a6-485a-9c5f-eb418a64c2d6" />
 
 Gauti rezultatai:
 
